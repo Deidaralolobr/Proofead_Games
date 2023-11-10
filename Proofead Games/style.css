@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#56070C;
+    height: 100vh;
+}
+.interface{
+    max-width: 1580px;
+    margin: 0 auto;
+}
+header{
+    padding: 30px 4%;
+    border-bottom: 2px solid #fff;
+}
+header>.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    font-size: 25px;
+    text-decoration: transparent;
+    color: #fff;
+    display: inline-block;
+    transition: .3s;
+}
+header a:hover{
+    text-decoration: underline;
+    color: #fff;
+    transition: .3s;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav.navbar ul li{
+    display: inline-block;
+    padding: 0px 80px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    font-size: 25px;
+}
+.logo i{
+    font-size: 40px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.box i{
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+.topo_site{
+    background: linear-gradient(179.50deg, black 0%, #56070C 90%);
+    padding-bottom: 60px;
+}
+.topo_site h1{
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.pesquisa{
+    background-color: #56070C;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: 630px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.texto_pesquisa{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    color: #fff;
+}
+.pesquisa i{
+    font-size: 20px;
+    color: #fff;
+}
+.texto_pesquisa::placeholder{
+    color: #fff;
+}
+.content{
+    height: 600px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 300px;
+}
+.navigation{
+    transform: translate(-50%);
+    display: flex;
+}
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #000000;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover{
+    background: #fff;
+}
+.slides input{
+    display: none;
+}
+.slides{
+    position: relative;
+    display: flex;
+    width: 480px;
+    height: 600px;
+}
+.slide{
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+}
+.slide img{
+    width: 200%;
+    height: 100%;
+}
+.slide p {
+    font-size: 20px;
+    position: absolute;
+    right: -50%;
+    bottom: 3%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+input:checked ~ .slide {
+    opacity: 0;
+}
+#slide1:checked ~ .s1,
+#slide2:checked ~ .s2,
+#slide3:checked ~ .s3 {
+    opacity: 1;
+}
+.alta h1{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.alta{
+    margin: 0 auto;
+    padding: 10px 4%;
+}
+.jogos_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 20px;
+}
+.jogos{
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+    color: #56070C;
+    outline: 2px solid #ccc;
+    outline-offset: -.8rem;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+    
+}
+.jogos:hover{
+    outline: 3px solid #222;
+    outline-offset: 0rem;
+    transition: .5s;
+    transform: scale(1.04);
+    background: #fff;
+    color: black;
+}
+.jogos img{
+    height: 15rem;
+    border: 3px solid #222;
+}
